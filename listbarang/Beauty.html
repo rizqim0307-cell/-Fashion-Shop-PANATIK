@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk Gabungan</title>
+    
+    <style>
+        /* --- CSS INTERNAL --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Container Utama */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Kartu Produk */
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            width: 230px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #eee;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        /* Gambar Produk */
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            background-color: #f8f9fa;
+        }
+
+        /* Detail Produk */
+        .card h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            height: 40px; /* Menjaga teks tetap sejajar */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card .price {
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Tombol Aksi */
+        .btn-buy {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            width: 100%;
+            transition: background 0.2s;
+        }
+
+        .btn-buy:hover {
+            background-color: #34495e;
+        }
+
+        /* Badge Tambahan */
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #f1c40f;
+            color: #000;
+            padding: 4px 8px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Daftar Produk</h1>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <span class="badge">Hot</span>
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-ltz2e3nwhibq17" alt="Barang 1">
+            <h3>Skintific Cover All Perfect Cushion </h3>
+            <span class="price">Rp 150.000</span>
+            <button class="btn-buy">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="card">
+            <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasc-m0o7yi6ryhpzeb" alt="Barang 2">
+            <h3>Skintific Matte Fit Serum Sunscreen Oil Control SPF50+</h3>
+            <span class="price">Rp 150.000</span>
+            <button class="btn-buy">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="card">
+            <img src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/img/VqbcmM/2024/6/29/47940dde-ff30-4379-8774-b01a45f0d82d.jpg~tplv-aphluv4xwc-resize-jpeg:700:0.jpg" alt="Barang 3">
+            <h3>New Launch Skintific - Retinol Skin Renewal Moisturizer 30g</h3>
+            <span class="price">Rp 140.000</span>
+            <button class="btn-buy">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="card">
+            <img src="https://img.lazcdn.com/g/p/f40f839b56e08a06ebfeea039e0969b9.jpg_720x720q80.jpg" alt="Barang 4">
+            <h3>Skincare Moisturizer Serum Clay Mask Face Wash Toner Serum Moisturizer</h3>
+            <span class="price">Rp 750.000</span>
+            <button class="btn-buy">Tambah ke Keranjang</button>
+        </div>
+
+        <div class="card">
+            <img src="https://otwoo.id/cdn/shop/files/SC057-01.jpg?v=1698645843&width=1200" alt="Barang 5">
+            <h3>Ultra Stay Lolepop Matte Lipstick Lipcream</h3>
+            <span class="price">Rp 70.000</span>
+            <button class="btn-buy">Tambah ke Keranjang</button>
+        </div>
+    </main>
+
+</body>
+</html>

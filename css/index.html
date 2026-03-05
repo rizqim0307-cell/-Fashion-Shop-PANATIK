@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk Ala Tokopedia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Container Utama */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Styling Card Barang */
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Gambar Produk */
+        .card-img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background-color: #eee;
+            object-fit: cover;
+        }
+
+        /* Detail Produk */
+        .card-content {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .product-name {
+            font-size: 14px;
+            color: #212121;
+            margin: 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            height: 38px;
+        }
+
+        .product-price {
+            font-weight: bold;
+            font-size: 16px;
+            color: #212121;
+            margin: 4px 0;
+        }
+
+        .shop-location {
+            font-size: 12px;
+            color: #6d6d6d;
+            display: flex;
+            align-items: center;
+        }
+
+        .rating {
+            font-size: 12px;
+            color: #faaf00;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        .sold-count {
+            color: #6d6d6d;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align: center; color: #03ac0e;">Rekomendasi Untukmu</h2>
+
+<div class="product-grid">
+    <div class="card">
+        <img src="https://picsum.photos/200?random=1" alt="Produk" class="card-img">
+        <div class="card-content">
+            <p class="product-name">Keyboard Mechanical RGB Hot-swappable Switch Red</p>
+            <p class="product-price">Rp 450.000</p>
+            <div class="shop-location">📍 Jakarta Pusat</div>
+            <div class="rating">
+                ⭐ 4.9 <span class="sold-count">| Terjual 1rb+</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/200?random=2" alt="Produk" class="card-img">
+        <div class="card-content">
+            <p class="product-name">Botol Minum 2 Liter Gradasi Motivasi Anti Tumpah</p>
+            <p class="product-price">Rp 35.000</p>
+            <div class="shop-location">📍 Kab. Tangerang</div>
+            <div class="rating">
+                ⭐ 4.8 <span class="sold-count">| Terjual 500+</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/200?random=3" alt="Produk" class="card-img">
+        <div class="card-content">
+            <p class="product-name">TWS Earphone Bluetooth 5.3 Low Latency Original</p>
+            <p class="product-price">Rp 199.000</p>
+            <div class="shop-location">📍 Surabaya</div>
+            <div class="rating">
+                ⭐ 5.0 <span class="sold-count">| Terjual 10rb+</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/200?random=4" alt="Produk" class="card-img">
+        <div class="card-content">
+            <p class="product-name">Kabel Data Type C Fast Charging 65W Braided</p>
+            <p class="product-price">Rp 25.000</p>
+            <div class="shop-location">📍 Kota Bandung</div>
+            <div class="rating">
+                ⭐ 4.7 <span class="sold-count">| Terjual 2rb+</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
